@@ -6,8 +6,8 @@ This project is part of the course
 **“Topics in Cognitive Psychology: Psychological Interventions Using Digital Technologies”**
 at the University of Graz.
 
-The goal of this website is to present and critically evaluate a meta-analysis on the impact of **ChatGPT and generative AI on student learning** called **Does ChatGPT enhance student learning? A systematic review and 
-meta-analysis of experimental studies** by Deng et al. from 2024.
+The goal of this website is to present and critically evaluate a meta-analysis on the impact of ChatGPT and generative AI on student learning called **Does ChatGPT enhance student learning? A systematic review and 
+meta-analysis of experimental studies** by *Deng et al.* from 2024.
 
 The website includes:
 
@@ -45,17 +45,16 @@ However, its effectiveness strongly depends on:
 .
 ├── index.html              # Main entry point of the website
 ├── index.md                # (Optional) Main entry point of the website on our Github Pages
-├── config.yml             # (Optional) configuration for our GitHub Pages
-├── README.md             # Project documentation
+├── config.yml              # (Optional) configuration for our GitHub Pages
+├── README.md               # Project documentation
 │
-├── sections/              # Content sections of the website
-│   ├── 01-meta-overview
-│   ├── 02-introduction
-│   ├── 03-results
-│   ├── 04-quality-magic
-│   ├── 05-stakeholders
-│   ├── 06-individual-studies
-|   └── 07-ai-transparency
+├── sections/               # Content sections of the website
+│   ├── 01-review
+│   ├── 02-results
+│   ├── 03-quality-magic
+│   ├── 04-stakeholders
+│   ├── 05-individual-studies
+|   └── 06-ai-transparency
 │
 ├── images/                # Images used on the website
 │
