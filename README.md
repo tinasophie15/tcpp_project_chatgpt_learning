@@ -75,8 +75,10 @@ No installation required.
 ---
 
 ## Individual Study Example
-Christina:
+Christina: **ChatGPT-3.5 as writing assistance in
+students’ essays** by Bašić et al. (2023)
 Marina:
+Maria: 
 
 ---
 
@@ -96,5 +98,6 @@ All content was reviewed and validated based on the original scientific sources.
 
 * Christina Sophie Knes
 * Marina Tatjana Hofer
+* Maria Clara Escanuela dos Santos 
 
 Technical University / University of Graz
