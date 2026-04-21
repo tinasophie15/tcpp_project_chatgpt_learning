@@ -80,7 +80,7 @@ students’ essays** by Bašić et al. (2023)
 
 Marina:
 
-Maria: 
+Clara: 
 
 ---
 
@@ -98,8 +98,8 @@ All content was reviewed and validated based on the original scientific sources.
 
 ## Authors
 
-* Christina Sophie Knes
-* Marina Tatjana Hofer
-* Maria Clara Escanuela dos Santos 
+* Escanuela dos Santos Maria Clara 
+* Hofer Marina Tatjana 
+* Knes Christina Sophie 
 
 Technical University / University of Graz
