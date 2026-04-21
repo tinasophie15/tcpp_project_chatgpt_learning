@@ -77,7 +77,9 @@ No installation required.
 ## Individual Study Example
 Christina: **ChatGPT-3.5 as writing assistance in
 students’ essays** by Bašić et al. (2023)
+
 Marina:
+
 Maria: 
 
 ---
