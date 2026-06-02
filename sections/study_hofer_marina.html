@@ -261,11 +261,39 @@
       .back-link {
         margin-left: 20px;
       }
+		or example after the a { ... } rule:
+		.top-bar {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  gap: 16px;
+		  margin: 22px 28px 0;
+		}
+		.ppt-link {
+		  display: inline-block;
+		  background: #ffd500;
+		  color: #111111;
+		  border: 2px solid #111111;
+		  border-radius: 10px;
+		  padding: 9px 14px;
+		  text-decoration: none;
+		  font-weight: 700;
+		  box-shadow: 0 3px 0 #111111;
+		  white-space: nowrap;
+		}
+		.ppt-link:hover {
+		  transform: translateY(1px);
+		  box-shadow: 0 2px 0 #111111;
+		}
+
     }
   </style>
 </head>
 <body>
+  <nav class="top-bar" aria-label="Page links">
   <a class="back-link" href="../index.html">&larr; Back to the main meta-analysis page</a>
+  <a class="ppt-link" href="../Lightning%20Talk%20Marina.pptx">Open Lightning Talk PPTX</a>
+</nav>
 
   <header>
     <div class="hero">
