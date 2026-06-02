@@ -1,3 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Example - Marina Hofer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #1f2937;
+      background: #f7f7f3;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #111111;
+      font-weight: 700;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin: 22px 0 0 28px;
+      color: #111111;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+      text-decoration-color: #111111;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 4px;
+    }
+
+    header {
+      max-width: 1000px;
+      margin: 24px auto 30px;
+      padding: 0 24px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(255, 213, 0, 0.96), rgba(255, 224, 99, 0.9)), url("images/students.png") center/cover no-repeat;
+      color: #111111;
+      border-radius: 14px;
+      padding: 56px 34px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+      border-bottom: 12px solid #111111;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 14px 0 0;
+      color: #1f2937;
+      font-size: 1.1rem;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 900px;
+      font-size: clamp(2rem, 5vw, 3.1rem);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      color: #111111;
+      margin-top: 0;
+    }
+
+    h3 {
+      margin: 0 0 6px;
+      color: #0f172a;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto 42px;
+      padding: 0 24px;
+    }
+
+    section {
+      background: white;
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      border-top: 5px solid #111111;
+    }
+
+    .glance-grid,
+    .two-column,
+    .finding-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .glance-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .two-column,
+    .finding-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .fact,
+    .panel,
+    .finding {
+      background: #f4f4f0;
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    .fact strong {
+      display: block;
+      color: #111111;
+      font-size: 1.7rem;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .label {
+      display: inline-block;
+      color: #111111;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+
+    blockquote {
+      margin: 0;
+      padding: 20px 24px;
+      border-left: 6px solid #111111;
+      background: #fff6bf;
+      border-radius: 10px;
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .takeaway {
+      background: #ffd500;
+      color: #111111;
+      border-top: none;
+      border-bottom: 12px solid #111111;
+    }
+
+    .takeaway h2,
+    .takeaway h3 {
+      color: #111111;
+    }
+
+    .takeaway p {
+      color: #1f2937;
+    }
+
+    .source {
+      font-size: 0.95rem;
+      color: #475569;
+    }
+
+    .stakeholder-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .stakeholder {
+      border: 2px solid #c6c6c6;
+      border-radius: 10px;
+      padding: 16px;
+      background: #ffffff;
+    }
+
+    .bias-list li strong {
+      color: #111111;
+    }
+
+    .plot-wrap {
+      overflow-x: auto;
+      border: 2px solid #c6c6c6;
+      border-radius: 12px;
+      background: #ffffff;
+      padding: 12px;
+    }
+
+    .plot-caption {
+      margin: 10px 0 0;
+      color: #475569;
+      font-size: 0.92rem;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .flow-box {
+      min-height: 96px;
+      border: 2px solid #111111;
+      border-radius: 10px;
+      background: #fff6bf;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .flow-box strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #111111;
+    }
+
+    .flow-arrow {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #111111;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      color: #64748b;
+    }
+
+    @media (max-width: 800px) {
+      .glance-grid,
+      .two-column,
+      .finding-grid,
+      .stakeholder-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .flow {
+        grid-template-columns: 1fr;
+      }
+
+      .flow-arrow {
+        transform: rotate(90deg);
+      }
+
+      .hero,
+      section {
+        padding: 24px;
+      }
+
+      .back-link {
+        margin-left: 20px;
+      }
+		.top-bar {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  gap: 16px;
+		  margin: 22px 28px 0;
+		}
+		.ppt-link {
+		  display: inline-block;
+		  background: #ffd500;
+		  color: #111111;
+		  border: 2px solid #111111;
+		  border-radius: 10px;
+		  padding: 9px 14px;
+		  text-decoration: none;
+		  font-weight: 700;
+		  box-shadow: 0 3px 0 #111111;
+		  white-space: nowrap;
+		}
+		.ppt-link:hover {
+		  transform: translateY(1px);
+		  box-shadow: 0 2px 0 #111111;
+		}
+
+    }
+  </style>
+</head>
+<body>
+  <nav class="top-bar" aria-label="Page links">
+  <a class="back-link" href="../index.html">&larr; Back to the main meta-analysis page</a>
+  <a class="ppt-link" href="../Lightning%20Talk%20Marina.pptx">Open Lightning Talk PPTX</a>
+</nav>
+
+  <header>
+    <div class="hero">
+      <h1>Cognitive ease at a cost: LLMs reduce mental effort but compromise depth in student scientific inquiry</h1>
+      <p>This page summarizes the study by Stadler, Bannert and Sailer (2024), that tested whether students learning outcome is different when they use ChatGPT-3.5 instead of a traditional search engine at a scientific inquiry task.</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Study at a glance</h2>
+      <div class="glance-grid">
+        <div class="fact">
+          <strong>n = 91</strong>
+          students included in a randomized laboratory experiment
+        </div>
+        <div class="fact">
+          <strong>n = 47 + 44</strong>
+          used Google search vs. ChatGPT-3.5
+        </div>
+        <div class="fact">
+          <strong>20 min</strong>
+          were used for the scientific inquiry task.
+        </div>
+        <div class="fact">
+          <strong>3 loads</strong>
+          intrinsic, extraneous and germane CL and the argumentation quality were measured.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Study overview</h2>
+      <div class="two-column">
+        <div class="panel">
+          <span class="label">Design</span>
+          <h3>Randomized comparison</h3>
+          <p>Students were randomly assigned to either a traditional web search condition or an LLM condition. The web search group used Google, while the LLM group used ChatGPT-3.5.</p>
+        </div>
+        <div class="panel">
+          <span class="label">Task</span>
+          <h3>Socio-scientific inquiry</h3>
+          <p>Participants researched whether nanoparticles in sunscreen should be recommended. They had to formulate a recommendation and justify it with scientific reasoning.</p>
+        </div>
+        <div class="panel">
+          <span class="label">Population</span>
+          <h3>University students</h3>
+          <p>The sample came from a German university. Students from medicine, pharmacy and biology were excluded to reduce the chance of strong prior knowledge about the topic.</p>
+        </div>
+        <div class="panel">
+          <span class="label">Control</span>
           <h3>Prior knowledge check</h3>
           <p>The authors checked whether the two groups differed in prior knowledge. No significant difference was found before the task.</p>
         </div>
