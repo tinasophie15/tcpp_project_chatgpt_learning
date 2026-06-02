@@ -184,6 +184,55 @@
       background: #e0f2f1;
     }
 
+    .study-main-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      max-width: 720px;
+      background: white;
+      color: #111827;
+      text-decoration: none;
+      padding: 18px 22px;
+      border-radius: 14px;
+      border-left: 6px solid #0f766e;
+      transition: 0.25s ease;
+    }
+
+    .study-main-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 114, 178, 0.16);
+    }
+
+    .study-main-link strong {
+      display: block;
+      font-size: 1.05rem;
+    }
+
+    .study-main-link small {
+      display: block;
+      margin-top: 4px;
+      color: #64748b;
+    }
+
+    .arrow-christina {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #f4a340;
+    }
+
+    .arrow-clara {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #f44040;
+    }
+    
+    .arrow-marina {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #f4f440;
+    }  
+
     .download-box {
       margin-top: 10px;
       border-radius: 12px;
@@ -351,14 +400,14 @@
 
       .copy-btn:hover {
         background: #0a5a53;
-}
+      }
     }
   </style>
 </head>
 <script>
 function copyCitation() {
   const citation =
-    "Deng, R., et al. (2025). Does ChatGPT enhance student learning? A systematic review and meta-analysis of experimental studies.";
+    "Deng, Ruiqi & Jiang, Maoli & Yu, Xinlu & Lu, Yuyan & Liu, Shasha. (2024). Does ChatGPT enhance student learning? A systematic review and meta-analysis of experimental studies. Computers & Education. 227. 105224. 10.1016/j.compedu.2024.105224.";
 
   navigator.clipboard.writeText(citation);
 
@@ -549,42 +598,47 @@ function copyCitation() {
 
       <details>
         <summary>Christina</summary>
+          <p>
+            This study looks at whether ChatGPT-3.5 helps students write better essays.
+            The researchers compared traditional essay writing with ChatGPT-assisted writing.
+          </p>
 
-        <h5>General Description</h5>
-        <ul>
-          <li>What was done (use pictures)</li>
-          <li>What were the main results?</li>
-          <li>Conclusion</li>
-        </ul>
-
-        <h5>Why is it a good example?</h5>
-        <p>Hallo! :)</p>
-
-        <h4>Here you can find my study example:</h4>
-        <a href="pdf/s41599-023-02269-7.pdf" download class="download-btn">
-          ChatGPT-3.5 as writing assistance in students’ essays by Bašić et al. (2023)
-        </a>
+          <a href="sections/study_knes_christina.html" class="study-main-link">
+            <span>
+              <strong>ChatGPT-3.5 as writing assistance in students’ essays</strong>
+              <small>Bašić et al. (2023) · Study summary</small>
+            </span>
+            <span class="arrow-christina">→</span>
+          </a>
+          <br></br>
+          <a href="pdf/s41599-023-02269-7.pdf" download class="download-btn">
+            PDF Download - Bašić et al. (2023)
+          </a>
+        </div>
       </details>
 
       <details>
         <summary>Clara</summary>
-
-        <ul>
-          <li>What was done (use pictures)</li>
-          <li>What were the main results?</li>
-          <li>Conclusion</li>
-        </ul>
-
-        <h5>Why is it a good example?</h5>
-        <p>Hey! :)</p>
+        <p>Description</p>
+        <a href="sections/study_xxxx.html" class="study-main-link">
+            <span>
+              <strong>Title</strong>
+              <small>Authors (Year) · Study summary</small>
+            </span>
+            <span class="arrow-clara">→</span>
+          </a>
       </details>
 
       <details>
         <summary>Marina</summary>
         <h4>Here you can find the details to my study example:</h4>
-        <a href="sections/study_hofer_marina.html" class="download-btn">
-          Summary page of Cognitive ease at a cost: LLMs reduce mental effort but compromise depth in student scientific inquiry.
-        </a>
+        <a href="sections/study_hofer_marina.html" class="study-main-link">
+            <span>
+              <strong>Cognitive ease at a cost: LLMs reduce mental effort but compromise depth in student scientific inquiry.</strong>
+              <small>Stadler et al. (2024) · Study summary</small>
+            </span>
+            <span class="arrow-marina">→</span>
+          </a>
         <a href="Lightning Talk Marina.pptx">
           Lightning Talk
           <br/>
@@ -616,8 +670,7 @@ function copyCitation() {
           Please cite the original authors when using this material:
         </p>
         <p>
-          Deng, R., et al. (2025). Does ChatGPT enhance student learning?
-          A systematic review and meta-analysis of experimental studies.
+          Deng, Ruiqi & Jiang, Maoli & Yu, Xinlu & Lu, Yuyan & Liu, Shasha. (2024). Does ChatGPT enhance student learning? A systematic review and meta-analysis of experimental studies. Computers & Education. 227. 105224. 10.1016/j.compedu.2024.105224.
         </p>
         <button class="citation-mini-btn" onclick="copyCitation()">
         Copy Citation

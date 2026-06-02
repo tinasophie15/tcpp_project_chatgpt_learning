@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Example - Christina Knes</title>
+
+  <style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f7fbff;
+        color: #1f2937;
+        line-height: 1.6;
+    }
+
+    .top-bar {
+        max-width: 1050px;
+        margin: 24px auto 0;
+        padding: 0 24px;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .back-link,
+    .ppt-link {
+        text-decoration: none;
+        font-weight: 700;
+        color: #0072b2;
+    }
+
+    .ppt-link {
+        background: #ffffff;
+        border: 2px solid #f4a340;
+        border-radius: 999px;
+        padding: 10px 18px;
+        box-shadow: 0 4px 12px rgba(244, 163, 64, 0.22);
+    }
+
+    .ppt-link:hover,
+    .back-link:hover {
+        color: #f4a340;
+    }
+
+    header {
+        max-width: 1050px;
+        margin: 28px auto;
+        padding: 0 24px;
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #0072b2, #f4a340);
+        color: white;
+        border-radius: 28px;
+        padding: 64px 42px;
+        box-shadow: 0 18px 40px rgba(0, 114, 178, 0.22);
+    }
+
+    .hero h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        line-height: 1.1;
+    }
+
+    .hero p {
+        max-width: 780px;
+        font-size: 1.1rem;
+        margin-top: 18px;
+        color: #f8fafc;
+    }
+
+    main {
+        max-width: 1050px;
+        margin: 0 auto 48px;
+        padding: 0 24px;
+    }
+
+    section {
+        background: #ffffff;
+        border-radius: 22px;
+        padding: 30px;
+        margin-bottom: 24px;
+        box-shadow: 0 8px 24px rgba(0, 114, 178, 0.09);
+    }
+
+    h2 {
+        margin-top: 0;
+        color: #0072b2;
+    }
+
+    h3 {
+        margin-bottom: 6px;
+        color: #111827;
+    }
+
+    .grid,
+    .two-column {
+        display: grid;
+        gap: 18px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .two-column {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        background: #f2f8fc;
+        border-left: 5px solid #0072b2;
+        border-radius: 16px;
+        padding: 20px;
+    }
+
+    .card:nth-child(even) {
+        border-left-color: #f4a340;
+    }
+
+    .card strong {
+        display: block;
+        font-size: 1.5rem;
+        color: #0072b2;
+        margin-bottom: 8px;
+    }
+
+    .card:nth-child(even) strong {
+        color: #d97706;
+    }
+
+    .label {
+        display: inline-block;
+        font-size: 0.8rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #0072b2;
+        letter-spacing: 0.05em;
+        margin-bottom: 6px;
+    }
+
+    .card:nth-child(even) .label {
+        color: #d97706;
+    }
+
+    blockquote {
+        margin: 0;
+        padding: 24px;
+        border-radius: 18px;
+        background: #fff4df;
+        border-left: 6px solid #f4a340;
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #0f172a;
+    }
+
+    ul {
+        padding-left: 22px;
+    }
+
+    li + li {
+        margin-top: 8px;
+    }
+
+    .takeaway {
+        background: linear-gradient(135deg, #e8f4fb, #fff1dc);
+        border: 2px solid #f4a340;
+    }
+
+    .source {
+        font-size: 0.95rem;
+        color: #475569;
+    }
+
+    footer {
+        text-align: center;
+        padding: 26px;
+        color: #6b7280;
+    }
+
+    @media (max-width: 850px) {
+        .grid,
+        .two-column {
+        grid-template-columns: 1fr;
+        }
+
+        .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        }
+
+        .hero,
+        section {
+        padding: 24px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+  <nav class="top-bar">
+    <a class="back-link" href="../index.html">&larr; Back to the main meta-analysis page</a>
+    <a class="ppt-link" href="../Lightning Talk Christina.pptx">Open Lightning Talk PPTX</a>
+  </nav>
+
+  <header>
+    <div class="hero">
+      <h1>ChatGPT-3.5 as writing assistance in students’ essays</h1>
+      <p>
+        This page summarizes the study by Bašić et al. (2023), which investigated whether students write better essays when they use ChatGPT-3.5 as a writing assistance tool.
+      </p>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>The Study at a Glance</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>n = 18</strong> students participated in the study.
+        </div>
+        <div class="card">
+          <strong>9 + 9</strong>
+          control group and ChatGPT-assisted group.
+        </div>
+        <div class="card">
+          <strong>4 hours</strong>
+          were available to write the essay.
+        </div>
+        <div class="card">
+          <strong>Grade C</strong>
+          was the average result in both groups.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Study Overview</h2>
+      <div class="two-column">
+        <div class="card">
+          <span class="label">Design</span>
+          <h3>Comparison between two Groups</h3>
+          <p>
+            One group wrote their essay traditionally, while the other group was allowed
+            to use ChatGPT-3.5 freely as a writing assistant.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="label">Task</span>
+          <h3>Argumentative essay writing</h3>
+          <p>
+            Students had to write an essay about the advantages and disadvantages of
+            biometric identification in forensic sciences.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="label">Participants</span>
+          <h3>Master’s students</h3>
+          <p>
+            the participants were second-year master’s students from the University
+            Department of Forensic Sciences.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="label">Assessment</span>
+          <h3>Essay quality and authenticity</h3>
+          <p>
+            The researchers measured essay grades, writing duration, text authenticity,
+            similarity between essays, and possible AI-generated content.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Main findings</h2>
+      <div class="two-column">
+        <div class="card">
+          <span class="label">Finding 1</span>
+          <h3>ChatGPT did not improve essay grades</h3>
+          <p>
+            The average essay grade was C in both the traditional writing group and the
+            ChatGPT-assisted group.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="label">Finding 2</span>
+          <h3>Students did not write faster</h3>
+          <p>
+            The ChatGPT group did not finish the task faster than the control group,
+            even though ChatGPT can generate text quickly.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="label">Finding 3</span>
+          <h3>Authenticity was slightly lower</h3>
+          <p>
+            The ChatGPT-assisted group showed slightly higher text unauthenticity,
+            but the similarity between all essays was generally low.
+          </p>
+        </div>
+
+        <div class="card">
+        <span class="label">Finding 4</span>
+        <h3>Experience matters</h3>
+        <p>
+            The study suggests that ChatGPT may only be helpful when students already
+            know how to guide, evaluate, and integrate AI-generated content.
+        </p>
+        </div>
+    </section>
+    <section>
+        <h2>Visual Summary of the Score Results</h2>
+
+        <img
+            src="../images/plot_christina.png"
+            alt="Study results"
+            style="
+                width:100%;
+                max-width:900px;
+                display:block;
+                margin:20px auto;
+                border-radius:16px;
+            "
+        >
+    </section>
+
+    <section>
+      <h2>Why is this study relevant?</h2>
+      <blockquote>
+        ChatGPT can support writing, but it does not automatically make students write better essays.
+      </blockquote>
+      <p>
+        This study is relevant because it challenges the assumption that AI tools always improve
+        academic performance. Even though ChatGPT can generate fluent text, students still need
+        writing skills, subject knowledge, critical thinking, and the ability to judge whether the
+        AI output is useful.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why is it special to me?</h2>
+      <div class="two-column">
+        <div class="card">
+          <span class="label">Personal view</span>
+          <h3>AI as support, not replacement</h3>
+          <p>
+            I find this study interesting because many students use ChatGPT for writing tasks,
+            but the study shows that using AI does not automatically lead to better results.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="label">Design perspective</span>
+          <h3>Guidance is important</h3>
+          <p>
+            For me, the study shows that conversational AI should be designed in a way that
+            helps students think, structure, and reflect instead of simply producing text for them.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Why is it a good example?</h2>
+      <p>
+        It is a good example because it studies ChatGPT in a realistic student writing situation.
+        The results are balanced: ChatGPT was useful as a possible assistant, but it did not improve
+        the students’ essay quality, writing speed, or authenticity.
+      </p>
+    </section>
+
+    <section>
+      <h2>Limitations and possible bias</h2>
+      <ul>
+        <li>The sample size was very small, with only 18 students in total.</li>
+        <li>The study focused on one university and one specific student group.</li>
+        <li>The essays were written in Croatian, while many AI detection tools work better in English.</li>
+        <li>It was the students’ first interaction with ChatGPT, so lack of experience may have affected the results.</li>
+        <li>The study used ChatGPT-3.5, so newer AI models could produce different outcomes.</li>
+      </ul>
+    </section>
+
+    <section class="takeaway">
+      <h2>Key takeaway</h2>
+      <h3>AI writing tools need critical and skilled users.</h3>
+      <p>
+        Bašić et al. (2023) show that ChatGPT-3.5 can assist students during essay writing,
+        but it does not automatically improve writing quality. For designers, this means that
+        AI tools should support learning, reflection, and critical evaluation instead of only making
+        writing easier or faster.
+      </p>
+    </section>
+
+    <section>
+      <h2>Abbreviations</h2>
+      <p>
+        AI – Artificial Intelligence <br />
+        GPT – Generative Pre-trained Transformer <br />
+      </p>
+
+      <h2>Source</h2>
+      <p class="source">
+        Bašić, Ž., Banovac, A., Kružić, I. et al. ChatGPT-3.5 as writing assistance in students’ essays. Humanit Soc Sci Commun 10, 750 (2023). <a href="https://doi.org/10.1057/s41599-023-02269-7">https://doi.org/10.1057/s41599-023-02269-7</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    Individual study example by Christina Knes
+  </footer>
+
+</body>
+</html>
