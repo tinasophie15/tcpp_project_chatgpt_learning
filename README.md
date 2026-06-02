@@ -43,22 +43,25 @@ However, its effectiveness strongly depends on:
 
 ```
 .
-├── index.html              # Main entry point of the website
-├── index.md                # (Optional) Main entry point of the website on our Github Pages
-├── config.yml              # (Optional) configuration for our GitHub Pages
-├── README.md               # Project documentation
 │
-├── sections/               # Content sections of the website
-│   ├── 01-review
-│   ├── 02-results
-│   ├── 03-quality-magic
-│   ├── 04-stakeholders
-│   ├── 05-individual-studies
-|   └── 06-ai-transparency
+├── example/                                 # Additional materials or examples provided by Prof. Ninaus
 │
-├── images/                # Images used on the website
+├── images/                                  # Images used in the websites
 │
-└── example/               # Additional materials or examples provided by Prof. Ninaus
+├── pdf/                                     # The pdf files of the individual studies and the meta analysis
+│
+├── sections/                                # Individual studies
+│   ├── study_hofer_marina.html              # Marina's Study
+│   ├── study_knes_christina.html            # Christina's Study
+│   ├── study_                               # Clara's study
+│
+├── index.html                               # Main entry point of the website
+│
+├── Lightning Talk Christina.pptx            # Christina's Lightning Talk presentation
+│
+├── Lightning Talk Marina.pptx               # Marina's Lightning Talk presentation
+│
+└── README.md                                # Project documentation
 ```
 
 ---
@@ -78,21 +81,10 @@ No installation required.
 Christina: **ChatGPT-3.5 as writing assistance in
 students’ essays** by Bašić et al. (2023)
 
-Marina:
+Marina: **Cognitive ease at a cost: LLMs reduce mental effort but compromise depth
+in student scientific inquiry** by Stadler, Bannert & Sailer (2024)
 
 Clara: 
-
----
-
-## AI Transparency Statement
-
-ChatGPT was used to support:
-
-* structuring the website,
-* drafting and refining text &
-* summarizing research findings.
-
-All content was reviewed and validated based on the original scientific sources.
 
 ---
 
