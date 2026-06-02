@@ -177,7 +177,7 @@
     }
 
     details[open] summary::after {
-      content: "âˆ’";
+      content: "−";
     }
 
     details[open] {
@@ -470,39 +470,6 @@ function copyCitation() {
         less than one week did not show the same benefit for academic performance. The authors therefore argue that the
         educational context and assessment design are crucial.
       </p>
-    </section>
-
-    <section id="figures">
-      <h2>Selected Figures from the Study</h2>
-      <p>
-        These figures make the abstract meta-analysis process more concrete: how the authors selected studies,
-        how they summarised the findings, and how effect sizes and potential publication bias can be inspected visually.
-      </p>
-      <div class="figure-grid">
-        <article class="figure-card">
-          <img src="images/fig1_prisma.jpg" alt="PRISMA flow diagram showing article search and selection process">
-          <h4>Fig. 1: PRISMA Flow Diagram</h4>
-          <p>Shows how 1,683 initial records were screened down to 69 studies included in the systematic review.</p>
-        </article>
-
-        <article class="figure-card">
-          <img src="images/fig2_key_findings.jpg" alt="Key findings figure summarising research questions">
-          <h4>Fig. 2: Key Findings</h4>
-          <p>Summarises the main pattern: ChatGPT studies are mostly university-level, classroom-based and often use ChatGPT directly.</p>
-        </article>
-
-        <article class="figure-card">
-          <img src="images/funnel_academic_performance_redraw.png" alt="Redrawn funnel plot for academic performance effect sizes">
-          <h4>Funnel Plot: Academic Performance</h4>
-          <p>A custom redraw based on Appendix B1 values. It visualises the asymmetry/publication-bias concern reported for academic performance.</p>
-        </article>
-
-        <article class="figure-card">
-          <img src="images/forest_mental_effort.jpg" alt="Forest plot of effect sizes for mental effort">
-          <h4>Forest Plot: Mental Effort</h4>
-          <p>Shows the small set of studies behind the finding that ChatGPT interventions reduced perceived mental effort.</p>
-        </article>
-      </div>
     </section>
 
     <section id="quality">
