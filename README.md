@@ -6,8 +6,7 @@ This project is part of the course
 **“Topics in Cognitive Psychology: Psychological Interventions Using Digital Technologies”**
 at the University of Graz.
 
-The goal of this website is to present and critically evaluate a meta-analysis on the impact of ChatGPT and generative AI on student learning called **Does ChatGPT enhance student learning? A systematic review and 
-meta-analysis of experimental studies** by *Deng et al.* from 2024.
+The goal of this website is to present and critically evaluate a meta-analysis on the impact of ChatGPT and generative AI on student learning called **Does ChatGPT enhance student learning? A systematic review and meta-analysis of experimental studies** by *Deng et al.* from 2024.
 
 The website includes:
 
@@ -61,9 +60,9 @@ However, its effectiveness strongly depends on:
 │
 ├── Lightning Talk Marina.pptx               # Marina's Lightning Talk presentation
 │
-├── Lightning Talk Maria.pptx               # Maria's Lightning Talk presentation
+├── Lightning Talk Maria.pptx                # Maria's Lightning Talk presentation
 │
-├── Presentation.pptx                       # Website presentation
+├── Presentation.pptx                        # Website presentation
 │
 └── README.md                                # Project documentation
 ```
@@ -82,13 +81,11 @@ No installation required.
 ---
 
 ## Individual Study Example
-Christina: **ChatGPT-3.5 as writing assistance in
-students’ essays** by Bašić et al. (2023)
+Christina: **ChatGPT-3.5 as writing assistance in students’ essays** by Bašić et al. (2023)
 
-Marina: **Cognitive ease at a cost: LLMs reduce mental effort but compromise depth
-in student scientific inquiry** by Stadler, Bannert & Sailer (2024)
+Marina: **Cognitive ease at a cost: LLMs reduce mental effort but compromise depth in student scientific inquiry** by Stadler, Bannert & Sailer (2024)
 
-Maria: 
+Maria: **Impact of ChatGPT on the Academic Writing Quality of Senior High School Students** by Maghamil & Sieras (2024)
 
 ---
 
