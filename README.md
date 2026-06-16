@@ -53,13 +53,17 @@ However, its effectiveness strongly depends on:
 ├── sections/                                # Individual studies
 │   ├── study_hofer_marina.html              # Marina's Study
 │   ├── study_knes_christina.html            # Christina's Study
-│   ├── study_                               # Clara's study
+│   ├── study_maria.html                     # Maria's study
 │
 ├── index.html                               # Main entry point of the website
 │
 ├── Lightning Talk Christina.pptx            # Christina's Lightning Talk presentation
 │
 ├── Lightning Talk Marina.pptx               # Marina's Lightning Talk presentation
+│
+├── Lightning Talk Maria.pptx               # Maria's Lightning Talk presentation
+│
+├── Presentation.pptx                       # Website presentation
 │
 └── README.md                                # Project documentation
 ```
@@ -84,7 +88,7 @@ students’ essays** by Bašić et al. (2023)
 Marina: **Cognitive ease at a cost: LLMs reduce mental effort but compromise depth
 in student scientific inquiry** by Stadler, Bannert & Sailer (2024)
 
-Clara: 
+Maria: 
 
 ---
 
