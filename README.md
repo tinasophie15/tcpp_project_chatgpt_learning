@@ -76,6 +76,10 @@ However, its effectiveness strongly depends on:
 2. Double-click on **`index.html`**
 3. The website will open in your browser
 
+or
+
+Use this link: https://tinasophie15.github.io/tcpp_project_chatgpt_learning/
+
 No installation required.
 
 ---
