@@ -43,6 +43,17 @@
       margin: 0;
     }
 
+    .hero-credit {
+      position: absolute;
+      right: 16px;
+      bottom: 12px;
+      color: #d1d5db;
+      font-size: 0.78rem;
+      background: rgba(0, 0, 0, 0.45);
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
     .site-nav {
       background: #0f766e;
       padding: 14px 20px;
@@ -316,6 +327,26 @@
       font-size: 0.95rem;
     }
 
+    .image-credit {
+      display: block;
+      margin-top: 8px;
+      color: #64748b;
+      font-size: 0.82rem;
+      line-height: 1.4;
+    }
+
+    .image-credit a {
+      color: #0f766e;
+    }
+
+    .image-credits-list {
+      padding-left: 20px;
+    }
+
+    .image-credits-list li {
+      margin-bottom: 8px;
+    }
+
     footer {
       text-align: center;
       padding: 1.5rem;
@@ -407,7 +438,7 @@
 <script>
 function copyCitation() {
   const citation =
-    "Deng, Ruiqi & Jiang, Maoli & Yu, Xinlu & Lu, Yuyan & Liu, Shasha. (2024). Does ChatGPT enhance student learning? A systematic review and meta-analysis of experimental studies. Computers & Education. 227. 105224. 10.1016/j.compedu.2024.105224.";
+    "Deng, R., Jiang, M., Yu, X., Lu, Y., & Liu, S. (2025). Does ChatGPT enhance student learning? A systematic review and meta-analysis of experimental studies. Computers & Education, 227, 105224. https://doi.org/10.1016/j.compedu.2024.105224";
 
   navigator.clipboard.writeText(citation);
 
@@ -426,6 +457,7 @@ function copyCitation() {
     <div class="overlay">
       <h1>Does ChatGPT enhance student learning?</h1>
       <p>Research-based insights on AI in education</p>
+      <span class="hero-credit">Image: project visual, AI-generated/adapted for educational use.</span>
     </div>
   </header>
 
@@ -532,24 +564,28 @@ function copyCitation() {
           <img src="images/fig1_prisma.jpg" alt="PRISMA flow diagram showing article search and selection process">
           <h4>Fig. 1: PRISMA Flow Diagram</h4>
           <p>Shows how 1,683 initial records were screened down to 69 studies included in the systematic review.</p>
+          <span class="image-credit">Source: Deng et al. (2025), Fig. 1, Computers &amp; Education, open access under a Creative Commons license.</span>
         </article>
 
         <article class="figure-card">
           <img src="images/fig2_key_findings.jpg" alt="Key findings figure summarising research questions">
           <h4>Fig. 2: Key Findings</h4>
           <p>Summarises the main pattern: ChatGPT studies are mostly university-level, classroom-based and often use ChatGPT directly.</p>
+          <span class="image-credit">Source: Deng et al. (2025), Fig. 2, Computers &amp; Education, open access under a Creative Commons license.</span>
         </article>
 
         <article class="figure-card">
           <img src="images/funnel_academic_performance_redraw.png" alt="Redrawn funnel plot for academic performance effect sizes">
           <h4>Funnel Plot: Academic Performance</h4>
-          <p>A custom redraw based on Appendix B1 values. It visualises the asymmetry/publication-bias concern reported for academic performance.</p>
+          <p>A custom redraw based on Appendix A1. It visualises the asymmetry/publication-bias concern reported for academic performance.</p>
+          <span class="image-credit">Redrawn by the project team based on Deng et al. (2025), Appendix A1.</span>
         </article>
 
         <article class="figure-card">
           <img src="images/forest_mental_effort.jpg" alt="Forest plot of effect sizes for mental effort">
           <h4>Forest Plot: Mental Effort</h4>
           <p>Shows the small set of studies behind the finding that ChatGPT interventions reduced perceived mental effort.</p>
+          <span class="image-credit">Source: Deng et al. (2025), Appendix B5, Computers &amp; Education, open access under a Creative Commons license.</span>
         </article>
       </div>
     </section>
@@ -593,6 +629,7 @@ function copyCitation() {
         <li><strong>Policy makers:</strong> should avoid simple bans or unconditional adoption and instead support evidence-based integration of generative AI.</li>
       </ul>
       <img src="images/Stakeholders.png" alt="Stakeholders diagram showing students, teachers, universities, researchers and policy makers" style="width: 40%; display: block; margin: 0 auto; margin-top: 20px; border-radius: 12px; border: 1px solid #e2e8f0;">
+      <p class="image-credit" style="text-align: center;">Image: project visual, AI-generated/adapted for educational use.</p>
     </section>
 
     <section id="studies">
@@ -667,12 +704,27 @@ function copyCitation() {
           Please cite the original authors when using this material:
         </p>
         <p>
-          Deng, Ruiqi & Jiang, Maoli & Yu, Xinlu & Lu, Yuyan & Liu, Shasha. (2024). Does ChatGPT enhance student learning? A systematic review and meta-analysis of experimental studies. Computers & Education. 227. 105224. 10.1016/j.compedu.2024.105224.
+          Deng, R., Jiang, M., Yu, X., Lu, Y., &amp; Liu, S. (2025). Does ChatGPT enhance student learning? A systematic review and meta-analysis of experimental studies. <em>Computers &amp; Education, 227</em>, 105224. https://doi.org/10.1016/j.compedu.2024.105224
         </p>
         <button class="citation-mini-btn" onclick="copyCitation()">
         Copy Citation
         </button>
       </div>
+    </section>
+
+    <section id="image-credits">
+      <h2>Image Credits</h2>
+      <ul class="image-credits-list">
+        <li><strong>Hero image and stakeholder diagram:</strong> project visuals, AI-generated/adapted for educational use.</li>
+        <li><strong>PRISMA flow diagram:</strong> reproduced/adapted from Deng et al. (2025), Fig. 1, <em>Computers &amp; Education</em>, 227, 105224.</li>
+        <li><strong>Key findings figure:</strong> reproduced/adapted from Deng et al. (2025), Fig. 2, <em>Computers &amp; Education</em>, 227, 105224.</li>
+        <li><strong>Academic performance funnel plot:</strong> custom redraw based on Deng et al. (2025), Appendix A1.</li>
+        <li><strong>Mental effort forest plot:</strong> reproduced/adapted from Deng et al. (2025), Appendix B5.</li>
+      </ul>
+      <p>
+        Deng et al. (2025) is published as an open-access article under a Creative Commons license.
+        DOI: <a href="https://doi.org/10.1016/j.compedu.2024.105224">10.1016/j.compedu.2024.105224</a>.
+      </p>
     </section>
   </main>
 
